@@ -1,7 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/jesusrodr/gohelloworld/config"
+)
 
 func main() {
-	fmt.Println("hello world!")
+	instance := config.Newconfig()
+	fmt.Println("hello world! " + instance.Name)
+
 }
